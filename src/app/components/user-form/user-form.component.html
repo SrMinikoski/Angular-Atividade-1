@@ -1,0 +1,14 @@
+<body>
+
+<h2>Formulário de Usuário</h2>
+<form>
+  <label for="name">Nome:</label>
+  <input id="name" [(ngModel)]="user.name" name="name">
+    <br>
+  <label for="email">Email:</label>
+  <input id="email" [(ngModel)]="user.email" name="email">
+
+  <p>Nome: {{ user.name }}</p>
+  <p>Email: {{ user.email }}</p>
+</form>
+</body>

@@ -1,0 +1,13 @@
+<body>
+<h2>Lista de frutas saborosas e saudáveis</h2>
+<ul>
+  <li *ngFor="let item of items; let i = index" appHighlight>
+    {{ item }} <button (click)="removeItem(i)" id="excluir">Remover</button>
+  </li>
+</ul>
+
+<form (ngSubmit)="addItem()">
+  <input [(ngModel)]="newItem" name="newItem" placeholder="Novo Item" required>
+  <button type="submit" id="adicionar">Adicionar Item</button>
+</form>
+</body>
